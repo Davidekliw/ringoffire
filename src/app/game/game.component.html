@@ -1,0 +1,8 @@
+<div class="playGroundBox">
+    <img src="../../assets/img/cardgamebackground.png" alt="">
+    <div class="cardStack">
+        <img [ngStyle]="{'right.px': i*5}" *ngFor="let c of [0,1,2,3]; let i=index;"
+            src="../../assets/img/playing_cards/card_cover.png" alt="">
+            <img (click)="takeCard()" class="cardStackHover" src="../../assets/img/playing_cards/card_cover.png" alt="">
+    </div>
+</div>

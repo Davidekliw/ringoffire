@@ -40,3 +40,9 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+src/assets/img/plus_round.png
+src/assets/img/plus.png
+src/assets/img/players/blackshorts.png
+src/assets/img/players/blueshorts.png
+src/assets/img/players/girl.png
+src/assets/img/players/redshorts.png

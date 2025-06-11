@@ -17,17 +17,15 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrl: './dialog-add-player.component.scss'
 })
 export class DialogAddPlayerComponent implements OnInit {
-  name: string = 'Max Mustermann';
+  name: string = '';
   constructor() { };
 
   onClick() {
     console.log(this.name);
-
   };
 
   onNoClick() {
     console.log(this.name);
-
   };
 
   ngOnInit(): void {

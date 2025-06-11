@@ -1,4 +1,12 @@
 <mat-card>
-    <mat-card-title>Titel</mat-card-title>
-    <mat-card-content>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo distinctio iste, numquam reprehenderit eveniet accusamus facere esse perspiciatis doloremque, ullam eum modi assumenda minus, veritatis quas quasi laborum consectetur provident.</mat-card-content>
+    <mat-card-title>{{ card }}</mat-card-title>
+    <mat-card-content>{{ description }}</mat-card-content>
 </mat-card>
+<mat-button-toggle-group
+    [value]="speak"
+    (change)="changeLanguage($event.value)"
+    aria-label="Font Style"
+    value="de">
+    <mat-button-toggle value="en">English</mat-button-toggle>
+    <mat-button-toggle value="de">Deutsch</mat-button-toggle>
+</mat-button-toggle-group>
